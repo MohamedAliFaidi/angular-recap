@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title: string = 'angular-crash-course';
+    title: string = 'angular-crash-course';
   myBtn: string = 'My Btn';
 
   isDisabled: boolean = true;

@@ -1,15 +1,2 @@
-
-<button type="button" [disabled]="isDisabled">{{ myBtn }}</button>
-<img alt="angular-logo" width="140" height="140" [src]="angularLogo" />
-<div [style.backgroundColor]="bgColor">
-  <p> Counter : {{ counter }}</p>
-  <button type="button" (click)="increment()">+</button>
-  <button type="button" (click)="decrement()">-</button>
-  <h2 [style.color]="titleColor">Title</h2>
-  <p [style]="Description">Description</p>
-  <h2 [class.textcolor]="redtext == 'yes'">Title 2</h2>
-<input [(ngModel)]="initial" />
-
-<div>you entred : {{initial}}</div>
-</div>
-FormsModule
+<app-navbar></app-navbar>
+<app-form></app-form>
