@@ -15,6 +15,7 @@ import { DetailsComponent } from './details/details.component';
     NavbarComponent,
     FormComponent,
     DetailsComponent
+    
   ],
   imports: [
     BrowserModule,
