@@ -95,12 +95,5 @@
     </table>
   </div>
    -->
-   <div class="form">
-    <div class="b" *ngIf="isSubmite" >
-    
-          <app-details  *ngFor="let msg of messages; let i = index"[message]="msg">
-          </app-details>
-    
-    </div>
-    
-    </div>
+   <app-list [messages]="messages" ></app-list>
+ 
