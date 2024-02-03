@@ -1,4 +1,5 @@
 
+
 <div class="container">
   <form (ngSubmit)="submit()">
     <div class="row">
@@ -65,15 +66,6 @@
   <app-details *ngFor="let msg of messages; let i = index" [message]="msg">
   </app-details>
 </div> -->
-<div class="form">
-<div class="b" *ngIf="isSubmite" >
-
-      <app-details  *ngFor="let msg of messages; let i = index"[message]="msg">
-      </app-details>
-
-</div>
-
-</div>
 
 <!-- 
   <div *ngIf="isSubmite" class="flex-container">
@@ -103,3 +95,12 @@
     </table>
   </div>
    -->
+   <div class="form">
+    <div class="b" *ngIf="isSubmite" >
+    
+          <app-details  *ngFor="let msg of messages; let i = index"[message]="msg">
+          </app-details>
+    
+    </div>
+    
+    </div>
