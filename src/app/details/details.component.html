@@ -30,6 +30,19 @@
     </div> -->
 
 
-        <h2 class="card_title">{{message.name}}</h2>
-        <p class="card_text">{{message.email}}</p>
-        <p class="card_text">{{message.subject}}</p>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+               <i class="fab fa-windows"></i>            
+              <h3>Name :{{message.name}}</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p class="card_text">Email : {{message.email}}</p>
+               <p>Message :{{message.subject}}</p>
+
+              <!-- <a href="#" type="button">Read More</a> -->
+            </div>
+          </div>
+       </div>
