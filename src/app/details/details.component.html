@@ -1,40 +1,42 @@
-  <!-- <div style="overflow-x:auto; margin: 5%;">
-    <table>
-      <tr>
-        <th>n°</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Subject</th>
-       
-      </tr>
-      <tr *ngFor="let msg of messages let i  = index;">
-        <th>{{i}}</th>
+<!-- <div style="overflow-x:auto; margin: 5%;">
+  <table>
+    <tr>
+      <th>n°</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Subject</th>
 
-        <td>{{msg.name}}</td>
-        <td>{{msg.email}}</td>
-        <td>{{msg.subject}}</td>
-        
-      </tr>
-      
-    </table>
-  </div>
+    </tr>
+    <tr *ngFor="let msg of messages let i  = index;">
+      <th>{{i}}</th>
+
+      <td>{{msg.name}}</td>
+      <td>{{msg.email}}</td>
+      <td>{{msg.subject}}</td>
+
+    </tr>
+
+  </table>
+</div>
 -->
 
 
-    <!-- <div class="column">
-      <div class="card">
-        <h3>{{message.name}}</h3>
-        <p>{{message.email}}</p>
-        <p>{{message.subject}}</p>
-      </div>
-    </div> -->
+<!-- <div class="column">
+  <div class="card">
+    <h3>{{message.name}}</h3>
+    <p>{{message.email}}</p>
+    <p>{{message.subject}}</p>
+  </div>
+</div> -->
 
- <div>
-         
-              <h3>Name :{{message.name}}</h3>
-       
-              <p class="card_text">Email : {{message.email}}</p>
-               <p>Message :{{message.subject}}</p>
-              </div>
-              <!-- <a href="#" type="button">Read More</a> -->
-  
+
+<!-- <a href="#" type="button">Read More</a> -->
+
+<div class="card">
+  <div class="container">
+    <h4><b>Name :{{ message.name }}</b></h4>
+    <p>Email : {{ message.email }}</p>
+    <p>{{message.subject}}</p>
+
+  </div>
+</div>

@@ -1,5 +1,8 @@
-.box {
-    display: flex;
-    background-color: red;
-    flex-direction: row;
+.flexy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
 }
+
+

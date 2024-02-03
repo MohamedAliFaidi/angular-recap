@@ -67,7 +67,7 @@
   </app-details>
 </div> -->
 
-<!-- 
+<!--
   <div *ngIf="isSubmite" class="flex-container">
     <div class="flex-item-left">Name: {{name}}</div>
     <div class="flex-item-right">Email :{{email}}</div>
@@ -81,7 +81,7 @@
         <th>First Name</th>
         <th>Last Name</th>
         <th>Subject</th>
-       
+
       </tr>
       <tr *ngFor="let msg of messages let i  = index;">
         <th>{{i}}</th>
@@ -89,11 +89,10 @@
         <td>{{msg.name}}</td>
         <td>{{msg.email}}</td>
         <td>{{msg.subject}}</td>
-        
+
       </tr>
-      
+
     </table>
   </div>
    -->
-   <app-list class="bo" [messages]="messages" ></app-list>
- 
+   <app-list [messages]="messages" ></app-list>
