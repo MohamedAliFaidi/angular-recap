@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TMessage } from '../../types/type';
 
 @Component({
   selector: 'app-list',
@@ -8,7 +9,7 @@ import { Component, Input } from '@angular/core';
 
 
 export class ListComponent {
-  @Input() messages: Array<any> = []
+  @Input() messages: Array<TMessage> = []
 
 
   del(index: number | string) {
