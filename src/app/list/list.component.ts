@@ -5,12 +5,23 @@ import { Component, Input } from '@angular/core';
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss'
 })
+
+
 export class ListComponent {
-  @Input() messages : Array<any> = []
+  @Input() messages: Array<any> = []
 
 
-  del (index:number ){
-    this.messages.splice(index,1)
-     }
+  del(index: number | string) {
+    switch (typeof index) {
+      case "number":
+        this.messages.splice(index, 1)
+        break;
+      case "string":
+        console.log(index)
+        break;
+      default:
+        break;
+    }
+  }
 
 }

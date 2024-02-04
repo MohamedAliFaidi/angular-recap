@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TMessage } from '../../types/type';
 
 @Component({
   selector: 'app-form',
@@ -14,7 +15,7 @@ export class FormComponent {
   email : string = "";
   subject : string = "";
   isSubmite : boolean = false;
-  messages : Array<any> = []
+  messages : Array<TMessage> = []
  submit () :void {
 this.isSubmite = true;
  this.messages.push({
