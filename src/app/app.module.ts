@@ -9,7 +9,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormComponent } from './components/form/form.component';
 import { DetailsComponent } from './components/details/details.component';
 import { ListComponent } from './components/list/list.component';
-import { FolderComponent } from './components/folder/folder.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +16,7 @@ import { FolderComponent } from './components/folder/folder.component';
     NavbarComponent,
     FormComponent,
     DetailsComponent,
-    ListComponent,
-    FolderComponent
-    
+    ListComponent    
   ],
   imports: [
     BrowserModule,
