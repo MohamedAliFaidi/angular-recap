@@ -1,11 +1,16 @@
-.flexy {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
+@media  (min-width: 768px){
 
-@media  (max-width: 668px){
+  .flexy {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+   
+ }
+
+@media  (max-width: 768px){
 
  .flexy {
       flex-direction: column;
