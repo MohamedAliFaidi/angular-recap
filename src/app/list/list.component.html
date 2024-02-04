@@ -1,6 +1,6 @@
 <div class="flexy" >
-<div  *ngFor="let msg of messages; let i = index">
-<app-details  [message]="msg">
+<div  *ngFor="let msg of messages; let  i = index">
+<app-details (remove)="del($event)"  [message]="msg" [index]="i">
 </app-details>
 </div>
 </div>

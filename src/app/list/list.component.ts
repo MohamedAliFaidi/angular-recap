@@ -8,4 +8,9 @@ import { Component, Input } from '@angular/core';
 export class ListComponent {
   @Input() messages : Array<any> = []
 
+
+  del (index:number ){
+    this.messages.splice(index,1)
+     }
+
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, EventEmitter,Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-details',
@@ -7,7 +7,14 @@ import { Component, Input } from '@angular/core';
 })
 export class DetailsComponent {
   @Input() message : any = {}
+  @Input() index :number = -1
 
-  
-
+  @Output()
+  remove: EventEmitter<any> = new EventEmitter();
+  deleteMessage  (){
+ this.remove.emit(this.index)
+  }
 }
+
+
+
