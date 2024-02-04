@@ -1,8 +1,17 @@
 .flexy {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+@media  (max-width: 668px){
+
+ .flexy {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
 }
 
 

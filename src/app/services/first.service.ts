@@ -13,19 +13,19 @@ export class FirstService {
   messages : Array<TMessage> = [];
 
   init():void {
-    this.inset({
+    this.insert({
       name: 'MohamedAliFaidi',
       email: 'mouhammedalifaidi@gmail.com',
       subject: 'azertyuiopqsdfghjklmxcvbn,;:!!!',
       isSubmite: false
     })
-    this.inset({
+    this.insert({
       name: 'MohamedAliFaidi',
       email: 'mouhammedalifaidi@gmail.com',
       subject: 'azertyuiopqsdfghjklmxcvbn,;:!!!',
       isSubmite: true
     }) 
-    this.inset({
+    this.insert({
       name: 'MohamedAliFaidi',
       email: 'mouhammedalifaidi@gmail.com',
       subject: 'azertyuiopqsdfghjklmxcvbn,;:!!!',
@@ -33,7 +33,7 @@ export class FirstService {
     })
   }
 
-  inset (message:TMessage):void {
+  insert (message:TMessage):void {
     this.messages.push(message);
   }
 

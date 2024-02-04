@@ -17,7 +17,7 @@ export class DetailsComponent {
   @Output()
   remove: EventEmitter<number | string > = new EventEmitter();
   deleteMessage  (){
- this.remove.emit(this.index)
+  this.remove.emit(this.index)
   }
 }
 
