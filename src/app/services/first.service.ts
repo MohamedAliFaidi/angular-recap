@@ -1,9 +1,17 @@
 import { Injectable } from '@angular/core';
 import { TMessage } from '../../types/type';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable(
+  // where our service should be provided
+//   {
+//   providedIn: 'root'
+// }  {
+//   providedIn: 'any'
+// }
+// 
+// we just injected the servvice at the providers array at app.module.ts
+
+)
 export class FirstService {
 
   constructor() {

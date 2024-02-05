@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { FormsModule } from '@angular/forms';
 
@@ -9,6 +9,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormComponent } from './components/form/form.component';
 import { DetailsComponent } from './components/details/details.component';
 import { ListComponent } from './components/list/list.component';
+import { FirstService } from './services/first.service';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,14 +18,19 @@ import { ListComponent } from './components/list/list.component';
     NavbarComponent,
     FormComponent,
     DetailsComponent,
-    ListComponent    
+    ListComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    provideClientHydration(),
+    //providing service in the app module
+    FirstService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
