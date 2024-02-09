@@ -8,6 +8,10 @@ const routes: Routes = [
   {path:"new",component :FormComponent}
 ,
   {path: "about",component :AboutComponent}
+  ,
+  //dynamic route setup
+  {path: "about/:username",component :AboutComponent}
+
 
 
 
