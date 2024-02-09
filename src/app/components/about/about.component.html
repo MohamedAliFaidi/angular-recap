@@ -1,2 +1,7 @@
 <p>about works!</p>
 <h3>hello  : {{param}}</h3>
+
+
+<div *ngFor="let query of querys ;let  i = index;" >
+  <p>query number {{i+1}} :{{query[0]}} : {{query[1]}}</p>
+</div>
