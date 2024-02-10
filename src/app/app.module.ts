@@ -16,7 +16,8 @@ import { AboutComponent } from './components/about/about.component';
 import
 {
   ProductsComponent
-} from "./components/products/products.component"
+} from "./components/products/products.component";
+import { CardComponent } from './components/products/card/card.component'
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import
     ListComponent,
     AboutComponent,
     ProductsComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

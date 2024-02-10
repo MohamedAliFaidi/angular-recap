@@ -22,14 +22,15 @@ export class ProductsComponent  implements  OnInit{
 
   }
 
-
+products: any[] = []
 
   ngOnInit() {
 
 
      this.service.getAllProductsWithLimits().subscribe({
-      next:(data)=>{
+      next:(data: any)=>{
         console.log("data",data)
+        this.products = data
       }
     })
 
