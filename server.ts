@@ -5,7 +5,6 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import AppServerModule from './src/main.server';
 
-import router  from './api/routes/test.routes';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -18,7 +17,6 @@ export function app(): express.Express {
   server.use(express.json())
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
-  server.use(router)
 
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
