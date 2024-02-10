@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { importProvidersFrom } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,10 @@ import { DetailsComponent } from './components/details/details.component';
 import { ListComponent } from './components/list/list.component';
 import { FirstService } from './services/first.service';
 import { AboutComponent } from './components/about/about.component';
+import
+{
+  ProductsComponent
+} from "./components/products/products.component"
 
 @NgModule({
   declarations: [
@@ -20,16 +26,20 @@ import { AboutComponent } from './components/about/about.component';
     DetailsComponent,
     ListComponent,
     AboutComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [
     provideClientHydration(),
     //providing service in the app module
-    FirstService
+    FirstService,
+    importProvidersFrom(HttpClientModule)
+
   ],
   bootstrap: [AppComponent]
 })

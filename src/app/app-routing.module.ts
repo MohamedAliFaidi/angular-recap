@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormComponent } from './components/form/form.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProductsComponent} from "./components/products/products.component";
 
 
 const routes: Routes = [
@@ -11,6 +12,13 @@ const routes: Routes = [
   ,
   //dynamic route setup
   {path: "about/:username",component :AboutComponent}
+  ,
+
+
+  // this route component demonstrate api data fatching
+
+  {path: "products",component :ProductsComponent}
+
 
 
 
